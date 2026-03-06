@@ -1,0 +1,110 @@
+{
+  "projectType": "saas",
+  "projectName": "PTA - Sistema de Planes de Trabajo Anual",
+  "projectDescription": "A comprehensive annual work plan management system for educational institutions built with Symfony",
+  "theme": "linden",
+  "primaryColor": "#1e40af",
+  "lightColor": "#3b82f6",
+  "darkColor": "#1e3a8a",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/pta-management",
+              "features/user-management",
+              "features/department-management",
+              "features/indicators-actions",
+              "features/notifications"
+            ]
+          },
+          {
+            "group": "User Guides",
+            "pages": [
+              "guides/creating-pta",
+              "guides/managing-staff",
+              "guides/tracking-progress",
+              "guides/role-permissions"
+            ]
+          },
+          {
+            "group": "Administration",
+            "pages": [
+              "admin/setup",
+              "admin/configuration",
+              "admin/database",
+              "admin/email-setup"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Entities",
+            "pages": [
+              "api/entities/encabezado",
+              "api/entities/personal",
+              "api/entities/indicadores",
+              "api/entities/acciones",
+              "api/entities/user"
+            ]
+          },
+          {
+            "group": "Controllers",
+            "pages": [
+              "api/controllers/encabezado-controller",
+              "api/controllers/personal-controller",
+              "api/controllers/security-controller"
+            ]
+          },
+          {
+            "group": "Services",
+            "pages": [
+              "api/services/user-creator",
+              "api/services/mailer",
+              "api/services/password-recovery"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Annual Work Plan (PTA) creation and management",
+    "User authentication and role-based access control",
+    "Department and position management",
+    "Indicators and actions tracking",
+    "Email notifications for password recovery and welcome messages",
+    "Admin dashboard with CRUD operations",
+    "Multi-level approval workflow (supervisor and aval)",
+    "Progress tracking and reporting"
+  ],
+  "publicApiSurface": [
+    "Encabezado entity (PTA header management)",
+    "Personal entity (staff management)",
+    "User entity (authentication)",
+    "Indicadores entity (performance indicators)",
+    "Acciones entity (action items)",
+    "Departamento entity (department structure)",
+    "Puesto entity (position/role)",
+    "EncabezadoController (PTA CRUD operations)",
+    "PersonalController (staff management)",
+    "SecurityController (authentication)",
+    "UserCreator service",
+    "WelcomeMailer service",
+    "RecuperarPasswordMailer service"
+  ]
+}
